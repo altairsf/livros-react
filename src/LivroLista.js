@@ -45,15 +45,13 @@ const LivroLista = () => {
 
     return (
         <main>
-            <h1>Lista de Livros</h1>
             <table className="table">
                 <thead>
                     <tr>
                         <th>Título</th>
                         <th>Resumo</th>
-                        <th>Autores</th>
                         <th>Editora</th>
-                        <th>Ações</th>
+                        <th>Autores</th>
                     </tr>
                 </thead>
                 <tbody>
