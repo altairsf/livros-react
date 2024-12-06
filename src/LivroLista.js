@@ -12,10 +12,10 @@ const LinhaLivro = ({ livro, excluir }) => {
         <tr>
             <td>{livro.título}</td>
             <td>{livro.resumo}</td>
+            <td>{nomeEditora}</td>
             <td>
                 {livro.autores.map((autor, index) => <div key={index}>{autor}</div>)}
             </td>
-            <td>{nomeEditora}</td>
             <td>
                 <button className="btn btn-danger" onClick={() => excluir(livro.codigo)}>
                     Excluir
@@ -30,16 +30,13 @@ const LivroLista = () => {
     const [carregado, setCarregado] = useState(false);
 
     useEffect(() => {
-        if (!carregado) {
             const livrosObtidos = controleLivro.obterLivros();
             setLivros(livrosObtidos);
             setCarregado(true);
-        }
     }, [carregado]);
 
     const excluir = (codigo) => {
         controleLivro.excluir(codigo);
-        setLivros(livros.filter(livro => livro.codigo !== codigo));
         setCarregado(false);  // Para reforçar o redesenho da página
     };
 
