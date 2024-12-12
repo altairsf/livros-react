@@ -1,5 +1,6 @@
 import { Editora } from "../modelo/Editora";
 
+//Definindo variável editoreas
 const editoras: Array<Editora> = [
     new Editora(1, 'Editora 1'),
     new Editora(2, 'Editora 2'),

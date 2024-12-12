@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import LivroLista from "./LivroLista";
 import LivroDados from "./LivroDados";
-//import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    //<BrowserRouter>
+    <BrowserRouter>
       <div className="App">
         <header className="App-header"></header>
         {/* Navegação */}
@@ -33,7 +33,7 @@ function App() {
         </Routes>
         <LivroLista />
       </div>
-    //</BrowserRouter>
+    </BrowserRouter>
   );
 }
 

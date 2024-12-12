@@ -1,5 +1,6 @@
 import { Livro } from "../modelo/Livro";
 
+//Variável livros
 const livros: Array<Livro> = [
     new Livro(1, 1, "Título 1", "Resumo 1", ["Autor 1"]),
     new Livro(2, 2, "Título 2", "Resumo 2", ["Autor 2"]),
