@@ -36,7 +36,7 @@ const LivroDados = () => {
             codEditora,
         };
 
-        controleLivro.incluir(novoLivro); //Adiciona um novo livro
+        controleLivro.incluir(novoLivro); //Adiciona um novo livro(pág. NOVO)
         navigate("/"); //Volta para a página
     };
 
