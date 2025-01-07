@@ -50,23 +50,25 @@ const LivroLista = () => {
 
   return (
     <main>
-      <h1>Catálogo de Livros</h1>
-      <table className="table">
-        <thead class="table-dark">
-          <tr>
-            <th>Título</th>
-            <th>Resumo</th>
-            <th>Editora</th>
-            <th>Autores</th>
-          </tr>
-        </thead>
+      <div class="container-fluid">
+        <h1>Catálogo de Livros</h1>
+        <table className="table table-striped table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Título</th>
+              <th>Resumo</th>
+              <th>Editora</th>
+              <th>Autores</th>
+            </tr>
+          </thead>
         <tbody>
           {livros.map((livro) => (
             <LinhaLivro key={livro.codigo} livro={livro} excluir={excluir} />
           ))}
         </tbody>
       </table>
-    </main>
+    </div>
+  </main>
   );
 };
 
