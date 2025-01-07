@@ -5,8 +5,7 @@ import { ControleEditora } from "./controle/ControleEditora";
 const controleLivro = new ControleLivros();
 const controleEditora = new ControleEditora();
 
-//const LinhaLivro = ({ livro, excluir }) => {
-//const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);
+
 function LinhaLivro(props) {
   const { livro, excluir } = props;
   const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);
