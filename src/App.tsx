@@ -25,7 +25,6 @@ function App() {
             </ul>
           </div>
         </nav>
-        {/* <h1>Catálogo de Livros</h1> */}
         </header>
       {/* <LivroLista /> */}
         <Routes>
