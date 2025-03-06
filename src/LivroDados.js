@@ -29,15 +29,16 @@ const LivroDados = () => {
         event.preventDefault(); //Para evitar o comportamento padrão do formulário
 
         const novoLivro = {
-            codigo: 0,
+            codigo: "", //Código com string vazia
             titulo,
             resumo,
             autores: autores.split("\n"),
             codEditora,
         };
 
-        controleLivro.incluir(novoLivro); //Adiciona um novo livro(pág. NOVO)
-        navigate("/"); //Volta para a página
+        controleLivro.incluir(novoLivro).then(() => {
+            navigate("/"); //Volta para a página após a inclusão
+        }); //Adiciona um novo livro(pág. NOVO)
     };
 
     return (
